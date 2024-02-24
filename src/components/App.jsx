@@ -101,7 +101,7 @@ const App = () => {
     if(loading){
         return (
             <div>
-                <img src="loading.gif" alt="Loading..."/>
+                <img src="loading2.gif" alt="Loading..."/>
             </div>
         )
       }else{
@@ -118,7 +118,7 @@ const App = () => {
       <h1 className="header"> Star Wars Planets</h1>
       <div className="planets">
         {planets.map((planet) => (
-          <div key={planet.url} className="planet-card col-4">
+          <div key={planet.url} className="planet-card">
             <h2>{planet.name}</h2>
             <p>Climate: {planet.climate}</p>
             <p>Population: {planet.population}</p>
